@@ -91,21 +91,14 @@ function resetGame(){
 
         // Let's play the game!
         // This logic determines the outcome of the game (win/loss), and increments the appropriate number
-        if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGuess === "d") || (userGuess === "e") 
-          || (userGuess === "f") || (userGuess === "g") || (userGuess === "h") || (userGuess === "i")  || (userGuess === "j") || (userGuess === "k") 
-          || (userGuess === "l") || (userGuess === "m") || (userGuess === "n") || (userGuess === "o") || (userGuess === "p") || (userGuess === "q") 
-          || (userGuess === "r") || (userGuess === "s") || (userGuess === "t") || (userGuess === "u") || (userGuess === "v") || (userGuess === "w") 
-          || (userGuess === "x") || (userGuess === "y") || (userGuess === "z"))
-              {
-                if (userGuess === computerGuess) {
+        if (userGuess === computerGuess) {
                   wins++;
                   remainingGuess--;
                 } else {
                   losses++;
                   remainingGuess--;
                 }     
-              }
-          if (remainingGuess === 0) {
+        if (remainingGuess === 0) {
               gameplayText.textContent = "Game Over";
               } 
 
