@@ -1,0 +1,16 @@
+/* Body of the Page - all htmls*/
+
+html, body{
+    background-image: url("../images/psychic-readings-2.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    margin: 0px;
+  
+}
+
+p{
+    color: #dddddd;
+    font-size: 30px;
+}
